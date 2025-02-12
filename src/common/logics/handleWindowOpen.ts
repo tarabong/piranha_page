@@ -1,6 +1,6 @@
-type SnsName = 'YouTube' | 'Instagram' | 'X' | 'Suzuri';
+type name = 'YouTube' | 'Instagram' | 'X' | 'Suzuri';
 
-export const handleWindowOpen = (name: SnsName) => {
+export const handleWindowOpen = (name: name) => {
   switch (name) {
     case 'YouTube':
       return window.open(process.env.NEXT_PUBLIC_YOUTUBE_URL);
