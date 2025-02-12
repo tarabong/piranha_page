@@ -39,11 +39,13 @@ export const TopPage = () => {
         maxWidth: { xs: '100%', sm: '600px', md: '800px' },
         mx: 'auto',
         textAlign: 'center',
+        mb: '50px',
       }}
     >
       <Image
         src="/images/logo_01.JPG"
         alt="logo01"
+        priority
         width={450}
         height={450}
         style={{
@@ -55,6 +57,8 @@ export const TopPage = () => {
       <Button onClick={handleClickSuzuri}>Suzuri</Button>
       <Button onClick={handleClickTouTube}>YouTube</Button>
       <Button onClick={handleClickInstagram}>Instagram</Button>
+      <Button onClick={handleClickInstagram}>X</Button>
+      <Button onClick={handleClickInstagram}>Profile</Button>
       <Button onClick={handleClick('discography')}>Discography</Button>
     </Box>
   );
