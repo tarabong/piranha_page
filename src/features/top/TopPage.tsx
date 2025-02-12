@@ -24,6 +24,7 @@ export const TopPage = () => {
         src="/images/logo_01.JPG"
         alt="logo01"
         priority
+        onContextMenu={e => e.preventDefault()}
         width={450}
         height={450}
         style={{
