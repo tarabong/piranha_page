@@ -57,8 +57,8 @@ export const TopPage = () => {
       <Button onClick={handleClickSuzuri}>Suzuri</Button>
       <Button onClick={handleClickTouTube}>YouTube</Button>
       <Button onClick={handleClickInstagram}>Instagram</Button>
-      <Button onClick={handleClickInstagram}>X</Button>
-      <Button onClick={handleClickInstagram}>Profile</Button>
+      <Button>X</Button>
+      <Button>Profile</Button>
       <Button onClick={handleClick('discography')}>Discography</Button>
     </Box>
   );
