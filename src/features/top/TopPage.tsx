@@ -37,7 +37,7 @@ export const TopPage = () => {
         gap: 2,
       }}
     >
-      <Image src="/images/logo_01.jpg" alt="logo01" width={450} height={450} />
+      <Image src="/images/logo_01.JPG" alt="logo01" width={450} height={450} />
 
       <Button onClick={handleClickSuzuri}>Suzuri</Button>
       <Button onClick={handleClickTouTube}>YouTube</Button>
