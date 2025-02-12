@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 
-export const DiscographyPage = () => {
+export const ProfilePage = () => {
   return (
     <Box
       sx={{

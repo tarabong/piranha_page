@@ -1,31 +1,9 @@
 import Image from 'next/image';
 import { Box } from '@mui/material';
-import { useRouter } from 'next/router';
 import { Button } from '@/common/components/button';
+import { handleWindowOpen } from '@/common/logics';
 
 export const TopPage = () => {
-  const router = useRouter();
-
-  const handleClick = (pathName?: string) => () => {
-    if (pathName) {
-      router.push(`/${pathName}`);
-    } else {
-      alert('準備中');
-    }
-  };
-
-  const handleClickTouTube = () => {
-    window.open(process.env.NEXT_PUBLIC_YOUTUBE_URL);
-  };
-
-  const handleClickInstagram = () => {
-    window.open(process.env.NEXT_PUBLIC_INSTAGRAM_URL);
-  };
-
-  const handleClickSuzuri = () => {
-    window.open(process.env.NEXT_PUBLIC_SUZURI_URL);
-  };
-
   return (
     <Box
       sx={{
@@ -54,12 +32,12 @@ export const TopPage = () => {
         }}
       />
 
-      <Button onClick={handleClickSuzuri}>Suzuri</Button>
-      <Button onClick={handleClickTouTube}>YouTube</Button>
-      <Button onClick={handleClickInstagram}>Instagram</Button>
-      <Button>X</Button>
-      <Button>Profile</Button>
-      <Button onClick={handleClick('discography')}>Discography</Button>
+      <Button onClick={() => handleWindowOpen('Suzuri')}>Suzuri</Button>
+      <Button onClick={() => handleWindowOpen('YouTube')}>YouTube</Button>
+      <Button onClick={() => handleWindowOpen('Instagram')}>Instagram</Button>
+      <Button onClick={() => handleWindowOpen('X')}>X</Button>
+      <Button href={'/profile'}>Profile</Button>
+      <Button href={'/discography'}>Discography</Button>
     </Box>
   );
 };

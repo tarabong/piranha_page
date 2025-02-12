@@ -13,7 +13,7 @@ export const Button = ({ children, onClick, ...props }: Props) => {
       sx={{ color: 'inherit', textTransform: 'none' }}
       {...props}
     >
-      <Typography variant="inherit" component="span" sx={{ color: 'inherit', fontWeight: 500 }}>
+      <Typography component="span" variant="inherit" sx={{ color: 'inherit', fontWeight: 500 }}>
         {children}
       </Typography>
     </MuiBubutton>
