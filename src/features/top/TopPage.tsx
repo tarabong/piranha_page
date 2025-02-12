@@ -33,11 +33,24 @@ export const TopPage = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        maxHeight: '100vh',
+        minHeight: '100vh',
         gap: 2,
+        px: { xs: 2, sm: 4, md: 6 },
+        maxWidth: { xs: '100%', sm: '600px', md: '800px' },
+        mx: 'auto',
+        textAlign: 'center',
       }}
     >
-      <Image src="/images/logo_01.jpg" alt="logo01" width={450} height={450} />
+      <Image
+        src="/images/logo_01.JPG"
+        alt="logo01"
+        width={450}
+        height={450}
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+        }}
+      />
 
       <Button onClick={handleClickSuzuri}>Suzuri</Button>
       <Button onClick={handleClickTouTube}>YouTube</Button>
