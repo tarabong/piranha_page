@@ -1,6 +1,6 @@
-type name = 'YouTube' | 'Instagram' | 'X' | 'Suzuri';
+type Name = 'YouTube' | 'Instagram' | 'X' | 'Suzuri';
 
-export const handleWindowOpen = (name: name) => {
+export const handleWindowOpen = (name: Name) => {
   switch (name) {
     case 'YouTube':
       return window.open(process.env.NEXT_PUBLIC_YOUTUBE_URL);

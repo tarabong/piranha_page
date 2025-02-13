@@ -11,12 +11,12 @@ export const TopPage = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        textAlign: 'center',
         minHeight: '100vh',
         gap: 2,
         px: { xs: 2, sm: 4, md: 6 },
         maxWidth: { xs: '100%', sm: '600px', md: '800px' },
         mx: 'auto',
-        textAlign: 'center',
         mb: '50px',
       }}
     >
